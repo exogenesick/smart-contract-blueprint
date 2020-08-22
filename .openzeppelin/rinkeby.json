@@ -1,0 +1,14 @@
+{
+  "contracts": {},
+  "solidityLibs": {},
+  "proxies": {
+    "mystash/Box": [
+      {
+        "address": "0x8C3921dC6258BAf86fE4aE4A0bC2180609976cB3",
+        "kind": "NonProxy",
+        "bytecodeHash": "937d9693db4384b98a94b3fe43e54a51588aeecaa6c883c52efc7eeaf13ee8cf"
+      }
+    ]
+  },
+  "manifestVersion": "2.2"
+}

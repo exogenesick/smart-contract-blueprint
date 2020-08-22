@@ -1,0 +1,31 @@
+{
+  "name": "smart-contract-blueprint",
+  "version": "1.0.0",
+  "main": "src/app/index.js",
+  "scripts": {
+    "test": "npm run compile && mocha --exit --recursive test",
+    "compile": "./node_modules/.bin/truffle compile",
+    "deploy:dev": "npx oz deploy -k regular -n development Box",
+    "deploy:public:rinkeby": "npx oz deploy -k regular -n rinkeby Box",
+    "verify:public:rinkeby": " ./node_modules/.bin/truffle run verify Box@0x8C3921dC6258BAf86fE4aE4A0bC2180609976cB3 --network rinkeby --debug"
+  },
+  "author": "exogenesick <kpajak@gmail.com>",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@openzeppelin/contract-loader": "^0.6.1",
+    "@openzeppelin/contracts": "^3.1.0",
+    "web3": "^1.2.11"
+  },
+  "devDependencies": {
+    "@openzeppelin/cli": "^2.8.2",
+    "@openzeppelin/test-environment": "^0.1.4",
+    "chai": "^4.2.0",
+    "ganache-cli": "^6.10.1",
+    "mocha": "^8.1.1",
+    "truffle": "^5.1.41",
+    "truffle-flattener": "^1.4.4",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "truffle-plugin-verify": "^0.3.11"
+  }
+}
